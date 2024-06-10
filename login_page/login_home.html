@@ -23,16 +23,16 @@
                     <input class="rounded" type="text" name="nome_completo" id="nome_1" placeholder="insira seu nome" >
                     <br>
                     <label for="cpf">CPF:</label>
-                    <input class="rounded" type="text" name="" id="cpf" placeholder="insira seu cpf"  minlength="10" maxlength="10"> 
+                    <input class="rounded" type="text" name="cpf" id="cpf" placeholder="insira seu cpf"  minlength="10" maxlength="10"> 
                     <br>
                     <label for="email">email:</label>
-                    <input class="rounded" type="email" id="email" placeholder="insira seu email" >
+                    <input class="rounded" type="email" name="email" id="email" placeholder="insira seu email" >
                     <br>
                     <br>
                     <label for="nascimento">Data de nascimento</label>
                     <br>
                     <br>
-                    <input class="rounded" type="date" placeholder=""  id="nascimento">
+                    <input class="rounded" type="date" name="nascimento" placeholder=""  id="nascimento">
                     <br>
                     <br>   
                     <button type="submit"  class="btn btn-primary">Enviar dados</button>
@@ -53,7 +53,7 @@
 
                 if (nome_1.value === ""  || nome_1.value === null) {
                     alert('O campo nome não foi preenchido corretamente');
-                    nome.focus();
+                    nome_1.focus();
                     return false;
                 }
                 if (cpf.value === ""  || cpf.value === null || cpf.value.length != 10){
@@ -67,15 +67,10 @@
                     email.focus();
                     return false;
                 }
-                if (senha.value === ""  || senha.value === null) {
-                    alert('O campo senha não foi preenchido corretamente');
-                    senha.focus();
-                    return false;
-                }
 
                 if (nascimento.value === ""  || nascimento.value === null) {
                     alert('O campo data de nascimento não foi preenchido corretamente');
-                    data.focus();
+                    nascimento.focus();
                     return false;
                 }
             
