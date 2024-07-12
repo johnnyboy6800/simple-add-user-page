@@ -1,1 +1,1 @@
-Primeiro site que eu criei utilizando php e outras ferramentas back end, como: apache, mysql-server.
+Site bem simples com a unica função de adicionar usuários ou "clientes" à um banco de dados mysql, utilizando php e apache.
